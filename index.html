@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Movie Finder</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SEARCH BAR -->
+        <section id="search-section">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <!-- FILTERS -->
+        <section id="filters">
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="movie">Movies</option>
+                <option value="series">Series</option>
+            </select>
+
+            <select id="yearFilter">
+                <option value="">All Years</option>
+                <!-- Years will be added dynamically -->
+            </select>
+        </section>
+
+        <!-- LOADING STATE -->
+        <div id="loading" style="display:none;">
+            Loading...
+        </div>
+
+        <!-- RESULTS -->
+        <section id="results"></section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Movie Finder © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
